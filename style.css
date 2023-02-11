@@ -1,4 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins&family=Raleway:wght@800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins&family=Raleway:wght@800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-size: 15px;
+    position: relative;
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca' sans-serif;
+    font-weight: 400;
+}
+
+.app {
+    max-width: 960px;
+    margin: 0 auto;
+   
+    
+    
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    color:  hsl(0, 0%, 95%);
+   
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+    color:  hsl(0, 0%, 95%);
+    
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    color:  hsl(0, 0%, 95%);
+   
+}
+
+.car {
+    padding: 40px;
+    
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display' sans-serif cursive;
+    text-transform: uppercase;
+    color:  hsl(0, 0%, 95%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.text {
+    color:  hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+}
+.btn {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%) ;
+    padding: 13px 27px ;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.btn1 {
+color: hsl(31, 77%, 52%);
+}
+.btn2 {
+ color:  hsl(184, 100%, 22%);
+}
+.btn3 {
+color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+.btn:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent ;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        margin: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* body {
 text-align: center;
 margin: 200px auto;
 font-size: 15px;
@@ -168,4 +288,4 @@ img {
 
 }
 
-}
+} */
